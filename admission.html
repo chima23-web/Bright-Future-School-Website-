@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admission information and application form for Bright Future Academy.">
+  <title>Bright Future Academy | Admission</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><a class="logo" href="index.html"><span>BFA</span> Bright Future Academy</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="admission.html">Admission</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav></div></header>
+
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Join our community</p><h1>Admission</h1><p>Start your application and take the next step toward a bright future.</p></div></section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Admission process</p><h2>Simple steps to get started</h2></div>
+        <div id="admission-steps" class="card-grid four"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container form-layout">
+        <div>
+          <p class="eyebrow">Application form</p>
+          <h2>Request admission information</h2>
+          <p>Complete the form and our admissions team will review your request.</p>
+          <div class="notice"><strong>School project demo:</strong> This form validates the information in the browser and displays a confirmation message. It does not submit data to a real school.</div>
+        </div>
+        <form id="admission-form" class="form-card" novalidate>
+          <label for="student-name">Student name</label><input id="student-name" name="studentName" type="text" required>
+          <label for="email">Parent/Guardian email</label><input id="email" name="email" type="email" required>
+          <label for="class-level">Class applying for</label><select id="class-level" name="classLevel" required><option value="">Select a class</option><option>Primary 1</option><option>Primary 2</option><option>Primary 3</option><option>Primary 4</option><option>Primary 5</option>
+          <option>Primary 6</option>
+          <option>JSS 1</option><option>JSS 2</option><option>JSS 3</option>
+          <option>SS 1</option>
+          <option>SS 2</option>
+          <option>SS 3</option></select>
+          <label for="message">Additional information</label><textarea id="message" name="message" rows="5"></textarea>
+          <button class="btn btn-primary" type="submit">Submit Application</button>
+          <p id="admission-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><h3>Bright Future Academy</h3><p>Excellence in education, character and leadership.</p></div><div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a></div><div><h4>Contact</h4><p> Education Avenue, Bwari Abuja.</p><p>+234 7065009396 </p></div></div><div class="footer-bottom">© <span data-year></span> Bright Future Academy. All rights reserved.</div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
